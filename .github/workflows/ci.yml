@@ -62,7 +62,7 @@ jobs:
        cat kustomization.yaml
     - name: Commit files
       run: |
-       cd manifests
+       cd manifest
        git config --global user.email "github-actions@github.com"
        git config --global user.name "github-actions"
        git commit -am "Update image tag"
