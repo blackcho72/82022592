@@ -3,9 +3,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.servlet.http.HttpServletRequest;
 
+@RestController
 public class UserNoController {
 	   @GetMapping("/api/v1/user")
 	    public Map<String, String> getUserNo(HttpServletRequest request) {
